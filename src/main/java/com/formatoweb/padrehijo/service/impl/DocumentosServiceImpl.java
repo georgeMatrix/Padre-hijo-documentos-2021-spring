@@ -22,4 +22,9 @@ public class DocumentosServiceImpl implements DocumentoService {
     public Documento saveDocumento(Documento documento) {
         return documentoRepository.save(documento);
     }
+
+    @Override
+    public Documento getDocumentoById(Long id) {
+        return documentoRepository.findById(id).orElse(null);
+    }
 }

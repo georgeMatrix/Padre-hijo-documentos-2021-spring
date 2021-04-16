@@ -15,7 +15,6 @@ import java.util.List;
 public class PadreController {
     @Autowired
     private PadreService padreService;
-//    private PadreConverter padreConverter;
 
     @GetMapping("/padres")
     public List<Padre> padres(){

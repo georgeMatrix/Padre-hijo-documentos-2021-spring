@@ -7,4 +7,5 @@ import java.util.List;
 public interface DocumentoService {
     List<Documento> documentos();
     Documento saveDocumento(Documento documento);
+    Documento getDocumentoById(Long id);
 }
